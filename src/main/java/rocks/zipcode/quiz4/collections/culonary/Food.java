@@ -8,17 +8,17 @@ import java.util.Map;
  * @author leon on 27/12/2018.
  */
 public class Food {
-    List<Spice> spice=new ArrayList<>();
+    List<Spice> spices=new ArrayList<>();
     public List<Spice> getAllSpices() {
-        return this.spice;
+        return this.spices;
     }
 
     public <SpiceType extends Class<? extends Spice>> Map<SpiceType, Integer> getSpiceCount() {
-
+       // spice.get()
         return null;
     }
 
     public void applySpice(Spice spice) {
-        spice=spice;
+        spices.add(spice);
     }
 }
